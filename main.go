@@ -14,8 +14,6 @@ import (
 	"bug_analyzer/kafka-finder/pkg/types"
 )
 
-// (All consts are GONE)
-
 func main() {
 	log.Println("Starting Bug Finder...")
 

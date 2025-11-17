@@ -70,10 +70,6 @@ func (c *Client) SearchBugs(projectName string, maxResults int) ([]string, error
 		return nil, fmt.Errorf("failed to create request: %w", err)
 	}
 
-	// === NO AUTHENTICATION ===
-	// We are intentionally *not* adding an Authorization header
-	// to see if anonymous access is allowed.
-
 	// 4. Send the request
 	resp, err := c.HttpClient.Do(req)
 	if err != nil {
