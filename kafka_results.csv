@@ -1,0 +1,3 @@
+BugID,JiraURL,CommitHash,CommitURL
+KAFKA-19479,https:/issues.apache.org/jira/browse/KAFKA-19479,57456b3c6c83db6bd2bd39b780d2ef7bb3fc924d,https:/github.com/apache/kafka/commit/57456b3c6c83db6bd2bd39b780d2ef7bb3fc924d
+KAFKA-19775,https:/issues.apache.org/jira/browse/KAFKA-19775,73627b6dd40c69d744281ee3149461c5a0f2febf,https:/github.com/apache/kafka/commit/73627b6dd40c69d744281ee3149461c5a0f2febf

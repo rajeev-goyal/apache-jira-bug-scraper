@@ -1,0 +1,15 @@
+{
+  "project_name": "KAFKA",
+  "local_repo_path": "../kafka",
+  "max_bugs_to_find": 100,
+  "output_csv_file": "kafka_results.csv",
+  "jira_base_url": "https://issues.apache.org/jira/browse/",
+  "repo_commit_url": "https://github.com/apache/kafka/commit/",
+  "analysis_keywords": [
+    "EmbeddedZookeeper",
+    "KafkaServerTestHarness",
+    "kafka.server.KafkaServer",
+    "IntegrationTestUtils",
+    "kafka.utils.TestUtils"
+  ]
+}
