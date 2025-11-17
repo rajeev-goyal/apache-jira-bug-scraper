@@ -9,6 +9,9 @@ The following are required to run the tool:
    ```bash
    go mod tidy
    go run .
+
+   # if you run into issues on a mac machine, use this command instead:
+   CGO_ENABLED=0 go run .
    ```
 
 ### Edit the `config.json` file
