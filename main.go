@@ -52,6 +52,18 @@ func main() {
 			continue
 		}
 
+		if len(config.AnalysisKeywords) == 0 {
+			log.Printf("  - %s: MATCH FOUND (no keywords) -> %s\n", bugID, commitHash)
+			result := types.BugResult{
+				BugID:      bugID,
+				CommitHash: commitHash,
+				JiraURL:    path.Join(config.JiraURL, bugID),
+				CommitURL:  path.Join(config.RepoURL, commitHash),
+			}
+			finalResults = append(finalResults, result)
+			continue // Skip to the next bug
+		}
+
 		// Step 3b: Get the diff *only for test files*
 		diff, err := git.GetCommitDiff(config.RepoPath, commitHash)
 		if err != nil {

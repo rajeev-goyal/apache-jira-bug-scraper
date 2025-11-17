@@ -30,7 +30,12 @@ Before running the tool, make sure to edit the `config.json` file for your syste
     "kafka.utils.TestUtils"
   ]
 }
+
 ```
+### Get all commit hashes without any keywords
+
+You can leave the analysis keywords empty to get the commit hashes for the bugs without filtering for minicluster tests. The tool finds the hashes by looking for the issue IDs in the commit messages.
+
 - `project_name`: The JIRA project name to analyze (e.g., "KAFKA").
 - `local_repo_path`: The local path to the cloned Git repository of the project.
 - `max_bugs_to_find`: The maximum number of bugs to analyze.
