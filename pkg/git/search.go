@@ -67,9 +67,6 @@ func GetCommitDiff(repoPath string, commitHash string) (string, error) {
 	args := []string{
 		"show",
 		commitHash,
-		"--", // Separator to ensure paths are treated as paths
-		"*Test.java",
-		"*Test.scala",
 	}
 
 	// 2. Set up the command
